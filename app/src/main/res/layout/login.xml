@@ -1,0 +1,80 @@
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/i1"
+        android:layout_width="120dip"
+        android:layout_height="80dip"
+        android:src="@drawable/commeter"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dip"
+        />
+
+    <TableRow android:gravity="center"
+        android:layout_marginTop="80dip"
+        >
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:text="电话号   " />
+        <EditText
+            android:id="@+id/account"
+
+            android:layout_height="wrap_content"
+            android:hint="input your phone"
+            />
+    </TableRow>
+    <TableRow android:gravity="center"
+        android:layout_marginTop="20dip"
+
+        >
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:text="密码    " />
+        <EditText android:id="@+id/pwd"
+
+            android:layout_height="wrap_content"
+            android:hint="input your password"
+            android:inputType="textPassword"
+
+            />
+    </TableRow>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="记住密码"
+            />
+    <TextView
+        android:id="@+id/join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="160dp"
+
+        android:text="注册"
+        android:textSize="24sp"
+        android:textColor="#0033cc"
+        android:layout_marginTop="10dip"
+         />
+    </LinearLayout>
+    <Button android:id="@+id/start_login"
+        android:gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:text="登录"/>
+
+
+</TableLayout>

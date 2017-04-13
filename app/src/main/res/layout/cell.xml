@@ -1,0 +1,14 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <ImageView
+      android:layout_width="fill_parent"
+      android:layout_height="158dp"
+      android:id="@+id/image1"
+
+      android:padding="0dp"
+      android:scaleType="fitXY"
+      android:src="@drawable/huadong1"
+      />
+</LinearLayout>

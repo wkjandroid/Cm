@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CM</string>
+    <string name="edit_text">搜索</string>
+    <string name="image">
+        欢迎进入合拍APP，欢迎进入合拍APP，欢迎进入合拍APP，欢迎进入合拍APP
+        欢迎进入合拍APP，欢迎进入合拍APP，欢迎进入合拍APP，欢迎进入合拍APP
+        欢迎进入合拍APP，欢迎进入合拍APP，欢迎进入合拍APP，欢迎进入合拍APP
+        欢迎进入合拍APP，欢迎进入合拍APP，欢迎进入合拍APP，欢迎进入合拍APP
+    </string>
+
+    <string name="classical_button">古典音乐</string>
+    <string name="work_button">工作</string>
+    <string name="shuochang_button">嘻哈说唱</string>
+    <string name="xiqu_button">戏曲</string>
+    <string name="school">校园</string>
+
+    <string name="shanggan_button">伤感</string>
+    <string name="dj_button">劲爆DJ</string>
+    <string name="lizhi_button">励志</string>
+    <string name="party_button">派对</string>
+    <string name="sports_button">运动</string>
+    <string name="all">all</string>
+    <string name="cancle">取消</string>
+    <string name="select">选择</string>
+</resources>

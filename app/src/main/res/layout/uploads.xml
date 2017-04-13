@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back1"
+
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+  <EditText
+
+      android:layout_width="fill_parent"
+      android:layout_height="120dp"
+      android:id="@+id/edittext"
+      android:enabled="true"
+      android:gravity="top"
+      android:padding="15dp"
+      android:inputType="textMultiLine"
+
+
+      android:scrollbars="vertical"
+      android:background="@drawable/editview_shape"
+      android:layout_marginTop="8dp"
+      android:hint="。。。说点什么。。。。"
+
+      />
+  <GridView
+      android:layout_marginTop="3dp"
+      android:id="@+id/gw"
+      android:numColumns="4"
+      android:horizontalSpacing="6dp"
+      android:columnWidth="80dp"
+      android:layout_width="match_parent"
+      android:layout_height="160dp" />
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择作品类型（必填）："
+        android:textColor="#00cc88"
+        android:textSize="16sp"
+        />
+    <com.example.administra.cm.WheelView
+        android:id="@+id/whellview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="上传"
+        />
+
+</LinearLayout>

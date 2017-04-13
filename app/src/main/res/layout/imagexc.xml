@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/sharepic"
+    android:background="#bfbebe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <RelativeLayout
+       android:id="@+id/shar_title"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:background="#ffffff"
+       >
+       <TextView
+           android:id="@+id/textView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_centerHorizontal="true"
+           android:text="相册"
+           android:textSize="22sp"
+           android:textColor="#000000"
+           />
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:id="@+id/share"
+           android:orientation="horizontal"
+           >
+
+
+
+       </LinearLayout>
+       <Button
+           android:id="@+id/select"
+           android:layout_width="60dp"
+           android:layout_height="match_parent"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginLeft="10dp"
+           android:text="选择"
+           android:textColor="#000000"
+           android:textSize="18sp"
+           />
+
+   </RelativeLayout>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:id="@+id/gv"
+        android:layout_below="@+id/shar_title"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+        android:visibility="visible"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#272b2e"
+
+        android:id="@+id/dellay"
+        >
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirm"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:layout_weight="1"
+            android:text="确定"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/login"
+            android:icon="@drawable/nav_call"
+            android:title="登录"
+            />
+        <item
+            android:id="@+id/join"
+            android:icon="@drawable/nav_friends"
+            android:title="注册"/>
+        <item
+            android:id="@+id/own"
+            android:title="进入个人中心"
+            android:icon="@drawable/nav_location"/>
+        <item
+            android:id="@+id/nav_mail"
+            android:icon="@drawable/nav_mail"
+            android:title="Mail"
+            />
+        <item
+            android:id="@+id/nav_task"
+            android:title="Tasks"
+            android:icon="@drawable/nav_task"/>
+    </group>
+</menu>

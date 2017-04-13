@@ -1,0 +1,234 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TabHost
+        android:id="@+id/tab_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+                <TableLayout
+                    android:id="@+id/ci"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/i2"
+                        android:layout_width="100dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/commeter"
+                        android:layout_gravity="center"
+                        android:contentDescription="logo" />
+
+                    <TableRow android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="账户名   " />
+                        <EditText
+                            android:id="@+id/ci_account"
+                            android:layout_height="wrap_content"
+                            android:hint="input your account"
+                            />
+                    </TableRow>
+                    <TableRow android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="昵    称   " />
+                        <EditText
+                            android:id="@+id/ci_username"
+                            android:layout_height="wrap_content"
+                            android:hint="input your username"
+                            />
+                    </TableRow>
+                    <TableRow android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="密    码   " />
+                        <EditText
+                            android:id="@+id/ci_password"
+                            android:inputType="textPassword"
+                            android:layout_height="wrap_content"
+                            android:hint="input your password"
+                            />
+                    </TableRow>
+                    <TableRow android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="性    别    " />
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:id="@+id/ci_gender"
+                                android:layout_height="wrap_content"
+                                android:text="男"
+                                android:checked="true"
+                                />
+                            <RadioButton
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="女"
+
+                                />
+
+                        </RadioGroup>
+
+                    </TableRow>
+                    <TableRow android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="QQ/微信  " />
+                        <EditText
+                            android:id="@+id/ci_qw"
+                            android:layout_height="wrap_content"
+                            android:hint="input your qq/wechat"
+                            />
+                    </TableRow>
+                    <Button android:id="@+id/ci_register_btn"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:text="注册"/>
+
+
+                </TableLayout>
+                <TableLayout
+                    android:id="@+id/qu_tab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/qu_image"
+
+                        android:layout_width="100dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/commeter"
+                        android:layout_gravity="center"
+                        android:contentDescription="logo" />
+
+                    <TableRow android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="账户名   " />
+                        <EditText
+                            android:id="@+id/qu_account"
+                            android:layout_height="wrap_content"
+                            android:hint="input your account"
+                            />
+                    </TableRow>
+                    <TableRow android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="昵    称   " />
+                        <EditText
+                            android:id="@+id/q_username"
+                            android:layout_height="wrap_content"
+                            android:hint="input your username"
+                            />
+                    </TableRow>
+                    <TableRow android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="密    码   " />
+                        <EditText
+                            android:id="@+id/qu_password"
+                            android:inputType="textPassword"
+                            android:layout_height="wrap_content"
+                            android:hint="input your password"
+                            />
+                    </TableRow>
+                    <TableRow android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="性    别    " />
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:id="@+id/qu_gender"
+                                android:layout_height="wrap_content"
+                                android:text="男"
+                                android:checked="true"
+                                />
+                            <RadioButton
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="女"
+
+                                />
+
+                        </RadioGroup>
+
+                    </TableRow>
+                    <TableRow android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="QQ/微信" />
+                        <EditText
+                            android:id="@+id/qu_qw"
+                            android:layout_height="wrap_content"
+                            android:hint="input your qq/wechat"
+                            />
+                    </TableRow>
+                    <Button android:id="@+id/qu_register_btn"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:text="注册"/>
+
+
+                </TableLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
