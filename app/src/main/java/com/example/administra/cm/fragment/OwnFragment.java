@@ -85,7 +85,6 @@ public class OwnFragment extends Fragment {
 
 
         }
-
         return mview;
     }
 }
