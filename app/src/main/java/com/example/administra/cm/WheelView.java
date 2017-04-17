@@ -138,9 +138,6 @@ public class WheelView extends ScrollView{
         };
 
     }
-
-
-
     private void initData() {
         displayItemCount = offset * 2 + 1;
         views.removeAllViews();
@@ -167,9 +164,6 @@ public class WheelView extends ScrollView{
         }
         return tv;
     }
-
-
-
     /**
      * 更改Item字体颜色
      * @param y
@@ -219,10 +213,8 @@ public class WheelView extends ScrollView{
     private int scrollDirection = -1;
     private static final int SCROLL_DIRECTION_UP = 0;
     private static final int SCROLL_DIRECTION_DOWN = 1;
-
     Paint paint;
     int viewWidth;
-
     @Override
     public void setBackgroundDrawable(Drawable background) {
 
@@ -274,7 +266,6 @@ public class WheelView extends ScrollView{
             scrollDirection = SCROLL_DIRECTION_UP;
 
         }
-
     }
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
@@ -298,7 +289,6 @@ public class WheelView extends ScrollView{
         }
         return super.onTouchEvent(ev);
     }
-
     /**
      * 选中回调
      */
@@ -306,7 +296,6 @@ public class WheelView extends ScrollView{
         if (null != onWheelViewListener) {
             onWheelViewListener.onSelected(selectedIndex, items.get(selectedIndex));
         }
-
     }
 
     public void setSeletion(int position) {
@@ -324,13 +313,9 @@ public class WheelView extends ScrollView{
     public String getSeletedItem() {
         return items.get(selectedIndex);
     }
-
     public int getSeletedIndex() {
         return selectedIndex - offset;
     }
-
-
-
     private OnWheelViewListener onWheelViewListener;
 
     public OnWheelViewListener getOnWheelViewListener() {

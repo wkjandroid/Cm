@@ -3,6 +3,8 @@ package com.example.administra.cm.activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -30,6 +32,7 @@ import com.example.administra.cm.po.Tab;
 import com.example.administra.cm.po.User;
 import com.example.administra.cm.util.ActivityCollector;
 
+import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,7 +51,6 @@ public class FragmentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.allayout);
-
         initTab();
         final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -61,8 +63,6 @@ public class FragmentActivity extends AppCompatActivity {
         User user=myApplication.getUser();
         if(user!=null){
             int intent=user.getIntention();
-
-
             information=user.getUsername();
             T_information.setText("ID:"+information);
         }else{
@@ -72,15 +72,12 @@ public class FragmentActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setHomeAsUpIndicator(R.drawable.nav_friends);
-
-
         }
         navView.setCheckedItem(R.id.login);
         navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
                 switch (item.getItemId()) {
-
                     case R.id.login:
                         Intent intent1 = new Intent(FragmentActivity.this, LoginActivity.class);
                         startActivity(intent1);
@@ -103,17 +100,11 @@ public class FragmentActivity extends AppCompatActivity {
                     default:
 
                 }
-
                 mDrawerLayout.closeDrawers();
                 return true;
             }
         });
-
-
-
     }
-
-
     private void initTab() {
         initTabData();
         mInflater = LayoutInflater.from(this);

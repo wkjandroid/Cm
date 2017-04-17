@@ -47,9 +47,7 @@ public class OwnFragment extends Fragment {
             mview=inflater.inflate(R.layout.ownplacelayout,container,false);
         }
         activity=getActivity();
-
         CircleImageView iv=(CircleImageView)mview.findViewById(R.id.own_image);
-
         iv.setOnClickListener(new View.OnClickListener(){
 
             @Override

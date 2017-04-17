@@ -1,8 +1,13 @@
 package com.example.administra.cm.po;
 
+import android.provider.MediaStore;
+
 import org.litepal.crud.DataSupport;
 
+import java.io.File;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 public class CmFile extends DataSupport {
     private int id;
@@ -13,8 +18,15 @@ public class CmFile extends DataSupport {
     private int type;
     private int intention;		//意图	：1上传	2下载	3修改	4删除
     public CmFile(){}
+    private Set<FileImages> fileImages=new HashSet<>();
+    public Set<FileImages> getFileImages() {
+        return fileImages;
+    }
+    public void setFileImages(Set<FileImages> fileImages) {
+        this.fileImages = fileImages;
+    }
 
-    public CmFile(int id,String account,Date time,byte[] file,int sign,int type,int intention) {
+    public CmFile(int id, String account, Date time, byte[] file, int sign, int type, int intention) {
         this.id = id;
         this.account=account;
         this.time=time;

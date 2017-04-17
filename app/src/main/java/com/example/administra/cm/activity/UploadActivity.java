@@ -170,7 +170,6 @@ private   Uri imageUri=null;
             realpath=imageUri.getPath();
             ImageView imageView=(ImageView)findViewById(R.id.imag_view);
             imageView.setImageBitmap(bitmap);
-
         }
     }
     public static Bitmap getSmallBitmap(String filePath) {

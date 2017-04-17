@@ -26,7 +26,6 @@
         <activity android:name=".UploadsActivity" />
         <activity android:name=".activity.Index"/>
         <service android:name=".service.LoginService" />
-
         <activity android:name=".activity.XiangeceActivity"></activity>
     </application>
 
